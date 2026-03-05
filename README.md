@@ -59,9 +59,6 @@ Este projeto existe graças ao trabalho incrível de diversas comunidades e cria
 npx create-aiox-god-mode meu-projeto
 ```
 
-> [!TIP]
-> Use `--yes` para pular todos os prompts e aceitar os padrões: `npx create-aiox-god-mode meu-projeto --yes`
-
 > [!NOTE]
 > Este pacote é equivalente ao [`create-aios-god-mode`](https://github.com/gutomec/create-aios-god-mode) com branding **Synkra AIOX**. Ambos instalam o mesmo sistema.
 
@@ -135,7 +132,7 @@ claude
 - **📖 Desenvolvimento Orientado a Stories** — Todo trabalho flui por stories: `@sm *draft` → `@po *validate` → `@dev *develop` → `@qa *gate`
 - **👥 Sistema de Squads** — Squads multi-agente pré-configurados para workflows de domínios específicos (dev de framework, design de marca, landing pages)
 - **🧩 find-skills** — Busca e instalação de skills sob demanda via `find-skills` do ecossistema Vercel Labs
-- **🔧 oh-my-claudecode** — Orquestração multi-agente opcional via [oh-my-claude-sisyphus](https://www.npmjs.com/package/oh-my-claude-sisyphus)
+- **🔧 oh-my-claudecode** — Orquestração multi-agente via [oh-my-claude-sisyphus](https://www.npmjs.com/package/oh-my-claude-sisyphus)
 - **🔌 Integração MCP** — 3 servidores MCP pré-configurados em `.mcp.json` para geração de imagens com IA, documentação ao vivo e componentes UI
 - **🛡️ Proteção do Framework** — Modelo de 4 camadas com deny rules determinísticas em `settings.json`. Arquivos L1/L2 são imutáveis
 - **🔄 QA Loop** — Ciclo automatizado de revisão-correção: `@qa review → veredito → @dev corrige → re-review` (máx. 5 iterações)
@@ -146,20 +143,18 @@ claude
 
 ## 📦 Fluxo de Instalação
 
-O instalador executa um **pipeline automatizado de 10 etapas**:
+O instalador executa um **pipeline automatizado de 8 etapas**:
 
 | Etapa | Descrição |
 |:-----:|-----------|
 | 1 | 🔍 **Validar ambiente** — Verifica versão do Node.js, nome do projeto, diretório e rede |
 | 2 | 🏗️ **Inicializar framework AIOX** — Baixa e estrutura `.aios-core/` com constitution, tasks e workflows |
 | 3 | ⚡ **Instalar God Mode** — Baixa personas de agentes, skills e rules do [aiox-god-mode-template](https://github.com/gutomec/aiox-god-mode-template) |
-| 4 | 👥 **Instalar squads** — Baixa e configura os pacotes de squads selecionados |
-| 5 | 🔌 **Configurar servidores MCP** — Configura `nano-banana-pro`, `context7`, `21st-dev` em `.mcp.json` |
-| 6 | 🚀 **Instalar framework GSD** — [Get Shit Done](https://www.npmjs.com/package/get-shit-done-cc) para gestão de projetos |
-| 7 | 🔧 **Instalar oh-my-claudecode** — [oh-my-claudecode](https://www.npmjs.com/package/oh-my-claude-sisyphus) para orquestração multi-agente (opcional) |
-| 8 | 🧹 **Limpeza e conversão** — Converte estrutura para a ferramenta de IA selecionada |
-| 9 | 📦 **Instalar dependências** — Executa `npm install` dentro de `.aios-core/` |
-| 10 | ✅ **Pronto** — Projeto preparado para desenvolvimento orientado por agentes |
+| 4 | 🔌 **Configurar servidores MCP** — Configura `nano-banana-pro`, `context7`, `21st-dev` em `.mcp.json` |
+| 5 | 🚀 **Instalar framework GSD** — [Get Shit Done](https://www.npmjs.com/package/get-shit-done-cc) para gestão de projetos |
+| 6 | 🔧 **Instalar oh-my-claudecode** — [oh-my-claudecode](https://www.npmjs.com/package/oh-my-claude-sisyphus) para orquestração multi-agente |
+| 7 | 🧹 **Limpeza** — Limpa estrutura de diretórios e converte para Claude Code |
+| 8 | ✅ **Finalizar** — Instala dependências, inicializa git e faz commit inicial |
 
 ---
 
@@ -171,7 +166,6 @@ Cria um novo projeto AIOX do zero.
 
 ```bash
 npx create-aiox-god-mode meu-projeto
-npx create-aiox-god-mode meu-projeto --yes    # Aceitar todos os padrões
 ```
 
 ### `update`
@@ -276,23 +270,6 @@ meu-projeto/
 ```
 
 ---
-
-## ⚙️ Opções e Configuração
-
-| Opção | Descrição |
-|-------|-----------|
-| `--yes` | Aceitar todos os padrões sem prompts interativos |
-
-### Prompts Interativos
-
-Ao executar sem `--yes`, o instalador pergunta:
-
-| Prompt | Opções | Padrão |
-|--------|--------|--------|
-| **Nome do projeto** | Qualquer nome válido em kebab-case | — |
-| **AI Tool** | `Claude Code` / `Codex` / `Gemini` / `Cursor` / `GitHub Copilot` / `Antigravity` | Claude Code |
-| **Squads** | Seleção múltipla dos squads disponíveis | AFS + NSC |
-| **oh-my-claudecode** | `Sim` / `Não` | Sim |
 
 ---
 
