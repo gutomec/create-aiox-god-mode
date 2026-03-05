@@ -1,6 +1,6 @@
 {
   "name": "create-aiox-god-mode",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Bootstrap a Synkra AIOX project with God Mode — AI agent orchestration",
   "type": "module",
   "bin": {
