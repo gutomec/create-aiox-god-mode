@@ -1,22 +1,21 @@
 <h1 align="center">
-  ⚡ create-aios-god-mode
+  ⚡ create-aiox-god-mode
 </h1>
 
 <p align="center">
   <strong>Monte um sistema completo de desenvolvimento orquestrado por IA em segundos.</strong><br>
-  <sub>10 agentes de IA. 22 skills. 3 servidores MCP. Um único comando.</sub>
+  <sub>6 AI Tools. 10 agentes de IA. 22 skills. 3 servidores MCP. Um único comando.</sub>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/create-aios-god-mode"><img src="https://img.shields.io/npm/v/create-aios-god-mode?style=flat-square&color=cb3837&label=npm" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/create-aios-god-mode"><img src="https://img.shields.io/npm/dm/create-aios-god-mode?style=flat-square&color=blue" alt="npm downloads"></a>
-  <a href="https://github.com/gutomec/create-aios-god-mode/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/create-aios-god-mode?style=flat-square&color=green" alt="license"></a>
-  <img src="https://img.shields.io/node/v/create-aios-god-mode?style=flat-square&color=339933" alt="node version">
+  <a href="https://www.npmjs.com/package/create-aiox-god-mode"><img src="https://img.shields.io/npm/v/create-aiox-god-mode?style=flat-square&color=cb3837&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/create-aiox-god-mode"><img src="https://img.shields.io/npm/dm/create-aiox-god-mode?style=flat-square&color=blue" alt="npm downloads"></a>
+  <a href="https://github.com/gutomec/create-aiox-god-mode/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/create-aiox-god-mode?style=flat-square&color=green" alt="license"></a>
+  <img src="https://img.shields.io/node/v/create-aiox-god-mode?style=flat-square&color=339933" alt="node version">
 </p>
 
 <p align="center">
   <a href="#-início-rápido">Início Rápido</a> ·
-  <a href="#-veja-em-ação">Exemplos</a> ·
   <a href="#-o-que-você-recebe">O Que Você Recebe</a> ·
   <a href="#-funcionalidades">Funcionalidades</a> ·
   <a href="#-comandos">Comandos</a> ·
@@ -59,16 +58,19 @@ Este projeto existe graças ao trabalho incrível de diversas comunidades e cria
 | [cc-deploy](https://github.com/saadnvd1/cc-deploy) | [saadnvd1](https://github.com/saadnvd1) | Deploy em VPS via Claude Code |
 
 > [!NOTE]
-> `create-aios-god-mode` é um **instalador e orquestrador** — ele baixa, configura e integra os projetos listados acima. Todo o crédito pelo framework Synkra AIOS pertence a [Pedro Valério](https://github.com/Pedrovaleriolopez) e à organização [SynkraAI](https://github.com/SynkraAI). O crédito pelas skills, MCPs e ferramentas pertence aos respectivos autores. Se você é autor de algum projeto listado e deseja ajustes na atribuição, [abra uma issue](https://github.com/gutomec/create-aios-god-mode/issues).
+> `create-aiox-god-mode` é um **instalador e orquestrador** — ele baixa, configura e integra os projetos listados acima. Todo o crédito pelo framework Synkra AIOS pertence a [Pedro Valério](https://github.com/Pedrovaleriolopez) e à organização [SynkraAI](https://github.com/SynkraAI). O crédito pelas skills, MCPs e ferramentas pertence aos respectivos autores. Se você é autor de algum projeto listado e deseja ajustes na atribuição, [abra uma issue](https://github.com/gutomec/create-aiox-god-mode/issues).
 
 ---
 
 ```bash
-npx create-aios-god-mode meu-projeto
+npx create-aiox-god-mode meu-projeto
 ```
 
 > [!TIP]
-> Use `--yes` para pular todos os prompts e aceitar os padrões: `npx create-aios-god-mode meu-projeto --yes`
+> Use `--yes` para pular todos os prompts e aceitar os padrões: `npx create-aiox-god-mode meu-projeto --yes`
+
+> [!NOTE]
+> Este pacote é equivalente ao [`create-aios-god-mode`](https://github.com/gutomec/create-aios-god-mode) com branding **Synkra AIOX**. Ambos instalam o mesmo sistema.
 
 ---
 
@@ -112,7 +114,7 @@ npx create-aios-god-mode meu-projeto
 **1.** Crie seu projeto
 
 ```bash
-npx create-aios-god-mode meu-projeto
+npx create-aiox-god-mode meu-projeto
 ```
 
 **2.** Entre no diretório
@@ -125,302 +127,17 @@ cd meu-projeto
 
 ```bash
 claude
-# depois digite: /aios-god-mode
+# depois digite: /aiox-god-mode
 ```
 
 > [!IMPORTANT]
-> O [Claude Code](https://docs.anthropic.com/en/docs/claude-code) precisa estar instalado para usar o sistema de agentes AIOS. Instale com `npm install -g @anthropic-ai/claude-code`.
-
----
-
-## 🎬 Veja em Ação
-
-> **Um prompt. Sistema completo. Zero trabalho manual.**
->
-> Os exemplos abaixo mostram prompts do God Mode que produzem sistemas completos — landing page + painel admin + backend + imagens geradas por IA — tudo orquestrado por agentes AIOS. De briefings detalhados a instruções simples, os resultados são igualmente impressionantes.
-
-<details>
-<summary><strong>🏥 Exemplo Real: Clínica Médica Premium — Landing Page High-Ticket + Sistema Admin</strong></summary>
-
-<br>
-
-Copie este prompt no Claude Code após ativar `/aios-god-mode`:
-
----
-
-### 🏥 CLÍNICA PREMIUM HIGH-TICKET MODE
-
-Ative `aios-god-mode`.
-
-Você irá **conceber, posicionar e implementar** uma landing page e sistema completo para uma clínica de nutrologia com posicionamento premium.
-
-O objetivo NÃO é vender um plano de R$347.
-
-O objetivo é vender:
-
-> 🔥 Um programa médico exclusivo de transformação metabólica contínua
-> (O valor é R$347/mês, mas a percepção deve ser de algo que valeria R$1.500+)
-
----
-
-#### 🎯 POSICIONAMENTO ESTRATÉGICO
-
-Antes de executar qualquer código:
-
-**1️⃣ Defina o posicionamento**
-
-A clínica não vende emagrecimento.
-Ela vende:
-
-* Longevidade
-* Performance
-* Controle metabólico
-* Supervisão médica contínua
-* Segurança clínica
-* Método estruturado
-
-Evite linguagem popular.
-Use linguagem médica sofisticada e acessível.
-
----
-
-**2️⃣ Defina o Avatar Premium**
-
-Público-alvo:
-
-* Homens e mulheres 30–55+
-* Empresários
-* Profissionais liberais
-* Pessoas com rotina intensa
-* Que já tentaram dietas
-* Que valorizam acompanhamento médico real
-
-Eles não querem "dieta".
-Eles querem:
-
-* Controle
-* Segurança
-* Acompanhamento
-* Método científico
-* Resultado previsível
-
----
-
-#### 🧠 ESTRUTURA DA LANDING (HIGH-TICKET)
-
-**HERO SECTION**
-
-* Headline forte e elegante
-* Subheadline médica e técnica
-* CTA discreto e sofisticado
-* Imagem premium estilo editorial médico
-
-Exemplo de direção (não copie literalmente):
-
-> "Supervisão Médica Contínua Para Transformação Metabólica Sustentável."
-
----
-
-**SEÇÃO 1 — AUTORIDADE**
-
-* Apresentação da equipe médica
-* Formação, CRM, Especializações
-* Método exclusivo
-
-Tom: Confiança silenciosa. Sem exagero. Sem hype.
-
----
-
-**SEÇÃO 2 — O MÉTODO**
-
-Explicar o método como um protocolo estruturado:
-
-* Avaliação metabólica
-* Estratégia personalizada
-* Monitoramento contínuo
-* Ajustes clínicos
-* Acompanhamento da equipe
-
-Nomeie o método. Ex: *Protocolo de Regulação Metabólica Contínua™*
-
----
-
-**SEÇÃO 3 — DIFERENCIAL**
-
-Comparar implicitamente com dietas genéricas, apps, influenciadores, programas sem médico.
-Sem atacar diretamente.
-
----
-
-**SEÇÃO 4 — PROVA SOCIAL PREMIUM**
-
-* Depoimentos elegantes
-* Fotos discretas
-* Histórias realistas
-* Transformações sem exagero visual
-
-Nada apelativo.
-
----
-
-**SEÇÃO 5 — INVESTIMENTO**
-
-Apresente como:
-
-> Programa de Acompanhamento Médico Contínuo
-> Investimento mensal: R$347
-
-Ancoragem psicológica antes: consultas avulsas, nutricionistas, personal, exames, tempo perdido.
-
----
-
-#### 📸 IMAGENS (nano banana pro)
-
-Gerar imagens no padrão:
-
-* Fotografia médica editorial
-* Luz natural, ambiente clean
-* Consultório sofisticado
-* Expressões confiantes
-* Pacientes reais (não fitness influencer)
-
-Estilo: Tons neutros, branco, bege, azul clínico. Sem exagero de saturação. Sem aparência artificial.
-
----
-
-#### 💾 BACKEND
-
-**Banco SQLite:**
-
-| Tabela | Campos |
-|--------|--------|
-| `leads` | id, nome, email, telefone, data_cadastro, origem, status, observacoes |
-| `users` (admin) | id, nome, email, senha_hash, role, data_criacao |
-
----
-
-#### 🔐 AUTENTICAÇÃO
-
-* Login seguro com senha hash
-* Proteção de rotas
-* Sessão autenticada
-* Logout
-
----
-
-#### 📊 PAINEL ADMIN PREMIUM
-
-Design limpo estilo SaaS médico.
-
-**Dashboard:** Total de leads, leads por período, gráfico de crescimento, conversões, origem de tráfego.
-
-**Tabela de leads:** Ordenação, filtro, busca, paginação + botão **Exportar para Excel (.xlsx)**.
-
----
-
-#### 🎨 ESTILO VISUAL
-
-* Minimalista, espaçamento generoso
-* Tipografia elegante
-* Animações sutis, transições suaves
-* UX fluida
-
-Referência mental: SaaS médico americano, clínica de luxo, estética discreta.
-
----
-
-#### ⚙️ EXECUÇÃO
-
-1. Planeje estrategicamente tudo
-2. Defina arquitetura
-3. Estruture código
-4. Implemente frontend + backend
-5. Gere imagens
-6. Organize estrutura de pastas
-7. Entregue pronto para deploy
-
-Execute tudo usando `aios-god-mode`.
-
-Nível exigido:
-
-> Clínica de alto padrão.
-> Produto que transmite confiança médica absoluta.
-> Conversão elegante, não agressiva.
-
----
-
-<br>
-
-**O que o AIOS faz com esse prompt:**
-
-| Agente | Ação |
-|--------|------|
-| `@architect` | Projeta a arquitetura full-stack (Next.js + SQLite + Auth) |
-| `@ux-design-expert` | Cria spec de UI premium com estética editorial médica |
-| `@dev` | Implementa landing page, painel admin e API backend |
-| `@data-engineer` | Projeta schema SQLite com índices adequados |
-| `@qa` | Valida qualidade, segurança e responsividade |
-| `nano-banana-pro` | Gera fotografia médica editorial via MCP |
-| `@devops` | Faz push para o GitHub quando pronto |
-
-</details>
-
-<br>
-
-> [!TIP]
-> **Você não precisa de um prompt detalhado para ter resultados impressionantes.** O exemplo abaixo é muito mais simples — e o God Mode entrega um sistema completo e pronto para produção com a mesma qualidade.
-
-<details>
-<summary><strong>⚡ Exemplo Rápido: Mesmo Projeto, Prompt Simples — Resultados Igualmente Impressionantes</strong></summary>
-
-<br>
-
-Este prompt mais curto alcança o mesmo escopo — landing page, backend, painel admin, fotos com IA, gestão de leads — com instruções mínimas. O God Mode preenche as lacunas usando suas skills e expertise de agentes integrados:
-
----
-
-Ative sua skill aios-god-mode.
-
-Utilize AIOS para criar uma landing page de alta conversão para um sistema de acompanhamento médico de uma clínica de nutrologia. A equipe médica deve estar disponível para acompanhamento contínuo de atendimentos relacionados à nutrologia, como emagrecimento e reeducação alimentar.
-
-O plano de assinatura mensal custa R$347.
-
-Gere fotografias utilizando nano banana pro com qualidade de fotógrafo profissional, transmitindo credibilidade, profissionalismo e padrão premium.
-
-Implemente um sistema completo com backend que:
-
-- Salve os leads em um banco de dados SQLite.
-- Possua painel de administração com autenticação via SQLite.
-- Permita que usuários cadastrados analisem estatísticas dos leads coletados.
-- Exiba uma tabela com os leads cadastrados.
-- Tenha um botão para exportação dos leads em formato Excel (.xlsx).
-
-Para o planejamento do projeto, utilize suas melhores skills estratégicas. Após concluir o planejamento, execute toda a implementação utilizando a skill aios-god-mode.
-
----
-
-<br>
-
-**Mesmo resultado, menos esforço.** Os agentes do God Mode lidam autonomamente com tudo:
-
-| O Que Você Escreveu | O Que o AIOS Faz |
-|---------------------|-------------------|
-| "landing page de alta conversão" | `@ux-design-expert` projeta layout otimizado para conversão, `@dev` implementa |
-| "fotografias com nano banana pro" | Gera fotografia médica profissional via MCP |
-| "leads em SQLite" | `@data-engineer` projeta o schema, `@dev` implementa a API CRUD |
-| "painel de administração com autenticação" | Sistema completo de auth + dashboard admin com estatísticas |
-| "exportação em Excel" | Exportação `.xlsx` usando a skill `xlsx` |
-| "melhores skills estratégicas" | `@architect` planeja a arquitetura, `@pm` define requisitos |
-
-> **A diferença?** O prompt detalhado dá controle preciso sobre posicionamento, tom de copy e direção visual. O prompt simples deixa o AIOS tomar essas decisões por você. Ambos entregam resultados prontos para produção.
-
-</details>
+> O [Claude Code](https://docs.anthropic.com/en/docs/claude-code) precisa estar instalado para usar o sistema de agentes AIOX. Instale com `npm install -g @anthropic-ai/claude-code`.
 
 ---
 
 ## ✨ Funcionalidades
 
-- **⚡ God Mode** — Orquestração completa com 10 personas de IA especializadas, cada uma com comandos dedicados
+- **⚡ God Mode** — Orquestração completa com 10 personas de IA especializadas, cada uma com comandos dedicados. Compatível com 6 AI Tools: Claude Code, Codex, Gemini, Cursor, GitHub Copilot e Antigravity
 - **🤖 Sistema de Agentes** — Ative agentes com `@nome-do-agente`, execute comandos com `*comando`. Protocolo de handoff integrado preserva contexto entre trocas
 - **📖 Desenvolvimento Orientado a Stories** — Todo trabalho flui por stories: `@sm *draft` → `@po *validate` → `@dev *develop` → `@qa *gate`
 - **👥 Sistema de Squads** — Squads multi-agente pré-configurados para workflows de domínios específicos (dev de framework, design de marca, landing pages)
@@ -440,8 +157,8 @@ O instalador executa um **pipeline automatizado de 10 etapas**:
 | Etapa | Descrição |
 |:-----:|-----------|
 | 1 | 🔍 **Validar ambiente** — Verifica versão do Node.js, nome do projeto, diretório e rede |
-| 2 | 🏗️ **Inicializar framework AIOS** — Baixa e estrutura `.aios-core/` com constitution, tasks e workflows |
-| 3 | ⚡ **Instalar God Mode** — Baixa personas de agentes, skills e rules do [aios-god-mode-template](https://github.com/gutomec/aios-god-mode-template) |
+| 2 | 🏗️ **Inicializar framework AIOX** — Baixa e estrutura `.aios-core/` com constitution, tasks e workflows |
+| 3 | ⚡ **Instalar God Mode** — Baixa personas de agentes, skills e rules do [aiox-god-mode-template](https://github.com/gutomec/aiox-god-mode-template) |
 | 4 | 👥 **Instalar squads** — Baixa e configura os pacotes de squads selecionados |
 | 5 | 🔌 **Configurar servidores MCP** — Configura `nano-banana-pro`, `context7`, `21st-dev` em `.mcp.json` |
 | 6 | 🧩 **Instalar skills do ecossistema** — 22 skills de repos da comunidade via `npx skills add` |
@@ -456,11 +173,11 @@ O instalador executa um **pipeline automatizado de 10 etapas**:
 
 ### `init` (padrão)
 
-Cria um novo projeto AIOS do zero.
+Cria um novo projeto AIOX do zero.
 
 ```bash
-npx create-aios-god-mode meu-projeto
-npx create-aios-god-mode meu-projeto --yes    # Aceitar todos os padrões
+npx create-aiox-god-mode meu-projeto
+npx create-aiox-god-mode meu-projeto --yes    # Aceitar todos os padrões
 ```
 
 ### `update`
@@ -469,16 +186,16 @@ Atualiza um projeto existente para a versão mais recente do template.
 
 ```bash
 cd meu-projeto
-npx create-aios-god-mode update
+npx create-aiox-god-mode update
 ```
 
 ### `doctor`
 
-Executa verificações de saúde em uma instalação AIOS existente.
+Executa verificações de saúde em uma instalação AIOX existente.
 
 ```bash
 cd meu-projeto
-npx create-aios-god-mode doctor
+npx create-aiox-god-mode doctor
 ```
 
 ### `add-squad`
@@ -487,7 +204,7 @@ Adiciona uma nova configuração de squad ao projeto.
 
 ```bash
 cd meu-projeto
-npx create-aios-god-mode add-squad backend
+npx create-aiox-god-mode add-squad backend
 ```
 
 ---
@@ -613,6 +330,8 @@ meu-projeto/
 │   ├── rules/                     # Regras de workflow, exemplos de tools, autoridade de agentes
 │   ├── skills/                    # God Mode + 22 skills do ecossistema
 │   └── CLAUDE.md                  # Instruções do projeto para o Claude
+├── openai.yaml                    # Configuração para Codex (gerado automaticamente)
+├── AGENTS.md                      # Skills list para Codex (gerado automaticamente)
 ├── .aios-core/
 │   ├── constitution.md            # Princípios do framework (imutável)
 │   ├── core/                      # Módulos core do framework
@@ -636,19 +355,6 @@ meu-projeto/
 
 ---
 
-## 👥 Squads
-
-Disponíveis durante a configuração interativa (ou todos selecionados com `--yes`):
-
-| Squad | Descrição | Padrão |
-|-------|-----------|:------:|
-| **AFS** — AIOS Forge Squad | Desenvolvimento e contribuição ao framework | ✅ |
-| **NSC** — Nirvana Squad Creator | Criação e gerenciamento de novos squads | ✅ |
-| **BrandCraft** | Identidade de marca e design system | — |
-| **Ultimate LP** | Criação de landing pages com workflow multi-agente | — |
-
----
-
 ## ⚙️ Opções e Configuração
 
 | Opção | Descrição |
@@ -662,53 +368,10 @@ Ao executar sem `--yes`, o instalador pergunta:
 | Prompt | Opções | Padrão |
 |--------|--------|--------|
 | **Nome do projeto** | Qualquer nome válido em kebab-case | — |
+| **AI Tool** | `Claude Code` / `Codex` / `Gemini` / `Cursor` / `GitHub Copilot` / `Antigravity` | Claude Code |
 | **Tipo de projeto** | `Greenfield` / `Brownfield` | Greenfield |
 | **Idioma** | `Português (PT-BR)` / `English` | PT-BR |
 | **Squads** | Seleção múltipla dos squads disponíveis | AFS + NSC |
-
----
-
-<details>
-<summary><h2>🔄 Workflows</h2></summary>
-
-### Story Development Cycle (SDC) — Principal
-
-O workflow principal de desenvolvimento, usado para toda implementação de stories:
-
-```
-@sm *draft → @po *validate → @dev *develop → @qa *gate → @devops *push
-```
-
-| Fase | Agente | Tarefa |
-|------|--------|--------|
-| Criar | `@sm` | Rascunho da story a partir de epic/PRD |
-| Validar | `@po` | Checklist de 10 pontos → GO / NO-GO |
-| Implementar | `@dev` | Código, testes, autocrítica |
-| QA Gate | `@qa` | 7 verificações de qualidade → PASS / FAIL |
-
-### QA Loop — Revisão Iterativa
-
-Ciclo automatizado de revisão-correção após o QA gate inicial:
-
-```
-@qa review → veredito → @dev corrige → re-review (máx. 5 iterações)
-```
-
-### Spec Pipeline — Pré-Implementação
-
-Transforma requisitos informais em especificações executáveis:
-
-| Complexidade | Fases | Fluxo |
-|--------------|-------|-------|
-| Simples (≤8) | 3 | coletar → spec → crítica |
-| Padrão (9-15) | 6 | coletar → avaliar → pesquisar → spec → crítica → planejar |
-| Complexo (≥16) | 6+ | Todas as fases + ciclo de revisão |
-
-### Brownfield Discovery — Avaliação de Legado
-
-Avaliação de débito técnico em 10 fases para codebases existentes com coleta de dados (arquitetura, banco de dados, frontend), revisão multi-agente e geração de relatório executivo.
-
-</details>
 
 ---
 
@@ -727,7 +390,9 @@ Avaliação de débito técnico em 10 fases para codebases existentes com coleta
 
 - [Synkra AIOS](https://github.com/SynkraAI/aios-core) — O framework de Sistema Orquestrado por IA, por [Pedro Valério](https://github.com/Pedrovaleriolopez)
 - [squads.sh](https://squads.sh) — Gerenciamento de squads para projetos AIOS
-- [aios-god-mode-template](https://github.com/gutomec/aios-god-mode-template) — O template que este CLI utiliza
+- [create-aios-god-mode](https://github.com/gutomec/create-aios-god-mode) — CLI original com branding AIOS
+- [aios-god-mode-template](https://github.com/gutomec/aios-god-mode-template) — O template AIOS
+- [aiox-god-mode-template](https://github.com/gutomec/aiox-god-mode-template) — O template AIOX que este CLI utiliza
 - [Get Shit Done](https://www.npmjs.com/package/get-shit-done-cc) — Framework de gestão de projetos
 
 ---
